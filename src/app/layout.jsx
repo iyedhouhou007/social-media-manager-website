@@ -4,9 +4,27 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
 
 export const metadata = {
-  title: "Suzi | Social Media Strategist",
+  title: "Suzi | Social Media Manager",
   description:
-    "Helping brands shine online with authentic and effective social media strategies.",
+    "Helping brands shine online ✨ Let's build your social media presence.",
+  openGraph: {
+    title: "Suzi | Social Media Manager",
+    description: "Helping brands shine online ✨",
+    images: [
+      {
+        url: "/suzi-preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Suzi Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Suzi | Social Media Manager",
+    description: "Helping brands shine online ✨",
+    images: ["/suzi-preview.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
