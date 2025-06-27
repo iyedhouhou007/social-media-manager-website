@@ -7,6 +7,9 @@ export const metadata = {
   title: "Suzi | Social Media Manager",
   description:
     "Helping brands shine online ✨ Let's build your social media presence.",
+  verification: {
+    google: "JbyLxuRyUU8tBfqCCJFjOF49591ZdlqXKz9l5ky8Bhk",
+  },
   openGraph: {
     title: "Suzi | Social Media Manager",
     description: "Helping brands shine online ✨",

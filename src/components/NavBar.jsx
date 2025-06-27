@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaSun, FaMoon, FaBars, FaWindowClose } from "react-icons/fa";
 import { useTheme } from "next-themes";
+import { Menu } from "@mui/material";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +52,7 @@ export default function NavBar() {
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-gray-700 dark:text-white"
           >
-            ☰
+            {menuOpen ? <FaWindowClose /> : <FaBars />}
           </button>
         </div>
       </nav>
